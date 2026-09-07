@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Note & Interviste</title>
+<meta name="description" content="Appunti e domande per le interviste dei concorrenti.">
+<meta name="theme-color" content="#101219">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Note & Interviste">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-row">
+    <h1 id="titolo">Note &amp; Interviste</h1>
+    <span class="sub" id="sottotitolo"></span>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-view="giorni"><span class="ico">🗓️</span>Giorni</button>
+  <button data-view="concorrenti"><span class="ico">👥</span>Concorrenti</button>
+  <button data-view="import"><span class="ico">📥</span>Importa</button>
+  <button data-view="export"><span class="ico">📤</span>Esporta</button>
+  <button data-view="setup"><span class="ico">⚙️</span>Setup</button>
+</nav>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
